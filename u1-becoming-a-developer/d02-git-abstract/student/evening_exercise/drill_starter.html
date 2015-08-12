@@ -9,6 +9,46 @@
   // YOUR SOLUTIONS START HERE!
 
   // 1. Pythagorean Theorem
+  var a, b, c;
+  a = parseInt(prompt("What is the length of the 1st side?"));
+  b = parseInt(prompt("What is the length of the 2nd side?"));
+  c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+  alert("The total length of the triangle with sides of length " + a + " and " + b + " is " + c + ".");
+
+// 2. Basic Conversion
+var lbs, klg;
+lbs = parseInt(prompt("What is your weight in pounds?"));
+klg = (lbs * 0.453592);
+
+alert(lbs + " pounds is equal to " + klg + " kg.");
+
+// 3. Killer Caffeine
+var weight, death, cups;
+weight = parseInt(prompt("What is your weight (in lbs)?"));
+death = (weight/100)*6000;
+cups = death/95;
+
+alert("You will DIE if you drink " + cups + " cups of coffee.");
+
+// // 4. Old Modems
+var movie, modem, time;
+movie = 200000000;
+modem = 56;
+time = movie/modem;
+alert("#4: It will take " + time + " seconds to download Blade Runner on a 56k/s modem.  That's over 41 days. Yikes!");
+
+// 5. A Long Long Long Time
+
+var dist, mph, timeOnRoad, cdRuns;
+dist = 3188;
+mph = 55;
+timeOnRoad = dist/mph;
+cdRuns = timeOnRoad/1.556;
+
+alert("#5: If you really love the Beetles that much, you can listen to their White album " + cdRuns + " times on your roadtrip.");
+
+
 
 
 
