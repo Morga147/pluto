@@ -17,6 +17,7 @@
 │   ├── bobs_data.txt
 │   ├── file1.txt
 │   └── sallys_customers.json
+├── fileOfTree.txt
 └── small-file.txt
 
-7 directories, 12 files
+7 directories, 13 files
