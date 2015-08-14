@@ -7,9 +7,11 @@ var sixLineStops = ['Grand Central', '33rd', '28th-six', '23rd-six', 'Union Squa
 
 // Personally created variables
 var getOn, getOff, numOfStops;
-getOn = prompt("The N Line stops at: Times Square, 34th, 28th, 23rd, Union Square, and 8th. \n Where are you boarding?");
+getOn = prompt("The N Line stops at: Times Square, 34th, 28th-n, 23rd-n, Union Square, and 8th. \nWhere are you boarding?");
 getOff = prompt("Where are you getting off?");
 
 numOfStops = nLineStops.indexOf(getOff) - nLineStops.indexOf(getOn);
 
-window.alert("You will be travelling " + numOfStops + ".");
+window.alert("You will be travelling " + numOfStops + " stop(s).");
+
+// Part 5
