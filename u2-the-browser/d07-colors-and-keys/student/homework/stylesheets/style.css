@@ -1,3 +1,65 @@
 /*==================================*/
 /* Write Your Styles below!!! */
 /*==================================*/
+
+/* Number 2 - Select all <h1> tags on the page */
+h1 {
+  text-transform: uppercase;
+}
+
+/* Number 3 -- Select all <a> tags on a page*/
+a {
+  text-decoration: none;
+}
+
+/* Number 4 -- Select all <p> tags on the page */
+p {
+  font-weight: bold;
+}
+
+/* Number 5 -- Select div tags with the class "green"*/
+div.green {
+  background-color: rgb(148, 179, 148);
+  border: 5px dashed green;
+}
+
+/* Number 6 -- Select all elements with the "ring" class */
+.ring {
+  border-color: gray;
+}
+
+/* Number 7 -- Select all elements with the "example" class */
+.example {
+  font-style: italic;
+}
+
+/* Number 8 -- Select the div with ID "bullseye" */
+div#bullseye {
+  background-color: #D04A41;
+}
+
+/* Number 9 -- Use the :hover pseudo selector with the bullseye ID */
+#bullseye:hover {
+  opacity: 0.5;
+}
+
+/* Number 10 -- Simultaneously select h1 and h2 tags */
+h1, h2 {
+  font-size: 3em;
+}
+
+/* Number 11 -- Select the div with classes target AND container */
+div.target.container {
+  background-color: #facade;
+}
+
+/* Number 12 -- */
+div.yellow p:nth-child(2) {
+  opacity: 0.0;
+}
+
+/* Number 13 -- */
+
+div p:nth-child(1) {
+  text-decoration: underline;
+}
