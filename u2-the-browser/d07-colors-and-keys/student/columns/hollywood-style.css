@@ -1,0 +1,19 @@
+h1 {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+div.squares {
+  max-width: 100px;
+  max-height: 100px;
+  border: 1px;
+}
+
+
+footer {
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}

@@ -15,10 +15,17 @@ jQuery(function() {
     var duck = $('<div class="duck"></div>');
     body.append(duck);
 
+    duck.click(function(){
+      duck.addClass("shot");
+      setTimeout(function(){
+        duck.remove();
+      }, 1000);
+    });
+
     // 2. Toggles the "flap" class on the duck every 250 ms (1/4 second)
     setInterval(function() {
       duck.toggleClass('flap');
-    }, 250)
+    }, 250);
 
     // 8a. Moves the newly created duck to a random location
     duck.css("top", Math.random() * window.innerHeight);
@@ -35,9 +42,10 @@ jQuery(function() {
   }
 
   // 7. Creates 5 ducks
-  for(var i=0; i<5; i++) {
+for(var i=0; i<5; i++) {
     createDuck();
   }
+
 
   // 10. ------ We're almost there! ------
 
@@ -50,8 +58,14 @@ jQuery(function() {
   // 13. Create a new function named checkForWinner() that reads the DOM
   //     to see if there are any ducks left. If not, alert "YOU WIN!"
 
+function checkForWinner(){
+  if ($(".duck") === 0){
+    alert("You Won!");
+  }
+} checkForWinner();
   // 14. BONUS: The ducks are moving pretty erratically, can you think
   //     of a way to adjust the ducks speed based on how far needs to move?
+  // hint: pythagorean theorem
 
   // 15. BONUS: Add the "left" and "right" class to the duck based on the
   //     direction the duck is flying

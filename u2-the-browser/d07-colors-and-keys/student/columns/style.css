@@ -1,0 +1,26 @@
+body {
+  background-color: #E0F8F7;
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+div.container {
+  border: solid gray 1px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+div.column {
+  width: 29%;
+  margin-left: 2%;
+  margin-right: 1%;
+  float: left;
+  border-right: solid gray 1px;
+}
+div.column:last-child {
+  border: none;
+}
+div.row {
+  clear: both;
+}

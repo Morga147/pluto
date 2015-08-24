@@ -1,6 +1,17 @@
 body, html {
   width: 100%; height: 100%;
   margin: 0;
+  background-color: lightskyblue;
+}
+.original {
+  color: white;
+  text-align: center;
+  font-size: 100px;
+}
+
+.soar {
+  color: pink;
+  font.size: 50px;
 }
 
 .duck {

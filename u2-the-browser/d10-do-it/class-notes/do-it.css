@@ -1,1 +1,36 @@
+header {
+  background-image: url("http://i.imgur.com/e1hacx3.gif");
+}
 
+h1 {
+  color: #800000;
+  text-align: center;
+  line-height: 200px;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 90px;
+}
+
+main {
+  background-color: #FFFFCC;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#getTask {
+  font-size: 18px;
+}
+
+button {
+  font-size: 18px;
+}
+
+li {
+  color: #800000;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.did-it {
+  text-decoration: line-through;
+}
