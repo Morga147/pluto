@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<title>Key Translation</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/key_translator.js"></script>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/key_translator.css" />
+</head>
+
+<body>
+  <p>It's hard to type out those icons. Enter text below and get a pretty output.</p>
+
+  <h2>Useful Icons</h2>
+
+  <table>
+    <TR>
+      <TD>English</TD>
+      <TD>Symbol</TD>
+    </TR>
+    <TR>
+      <TD>Command</TD>
+      <TD>&#x2318</TD>
+    </TR>
+    <TR>
+      <TD>Tab</TD>
+      <TD>&#8677</TD>
+    </TR>
+    <TR>
+      <TD>Return</TD>
+      <TD>&#x23ce</TD>
+    </TR>
+    <TR>
+      <TD>Option</TD>
+      <TD>&#8997</TD>
+    </TR>
+    <TR>
+      <TD>Control</TD>
+      <TD>&#8963</TD>
+    </TR>
+    <TR>
+      <TD>ESC</TD>
+      <TD>&#x238B</TD>
+    </TR>
+    <TR>
+      <TD>Left</TD>
+      <TD>&#8592</TD>
+    </TR>
+    <TR>
+      <TD>Down</TD>
+      <TD>&#8595</TD>
+    </TR>
+    <TR>
+      <TD>Up</TD>
+      <TD>&#8593</TD>
+    </TR>
+    <TR>
+      <TD>Right</TD>
+      <TD>&#8594</TD>
+    </TR>
+    <TR>
+      <TD>Shift</TD>
+      <TD>&#8679</TD>
+    </TR>
+    <TR>
+      <TD>Eject</TD>
+      <TD>&#9167</TD>
+    </TR>
+    <TR>
+      <TD>Caps (Lock)</TD>
+      <TD>&#8682</TD>
+    </TR>
+  </table>
+
+  <p>Type Here.</p>
+    <form>
+      <input type="text" id="getEnglish" placeholder="Write symbol name" />
+      <button>Submit</button>
+    </form>
+
+  <p>Output Here.</p>
+    <div class="generated-symbol">
+      <ul id="returnedSymbol">
+      </ul>
+    </div>
+</body>
+</html>
