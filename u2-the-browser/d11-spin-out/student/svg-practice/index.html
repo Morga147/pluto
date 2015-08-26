@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spin Out</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.js"></script>
+    <script>
+      $(function() {
+        setInterval(function(){
+          var shiftX = Math.random()*40-20;
+          var shiftY = Math.random()*40-20;
+          $("#left-pupil, #right-pupil")
+          .velocity({translateX: shiftX, translateY: shiftY}, 500),1000})
+      });
+    </script>
+  </head>
+  <body>
+    <!-- <svg width="1000" height="1000"> -->
+      <!-- <rect x="0" y="70" width="100" height="100" fill="#FF0000" />
+      <rect x="10" y="60" width="100" height="100" fill="#FF6600" />
+      <rect x="20" y="50" width="100" height="100" fill="#FFFF00" />
+      <rect x="30" y="40" width="100" height="100" fill="#00FF00" />
+      <rect x="40" y="30" width="100" height="100" fill="#0000FF" />
+      <rect x="50" y="20" width="100" height="100" fill="#6600FF" />
+      <rect x="60" y="10" width="100" height="100" fill="#9900FF" />
+
+      <circle cx="250" cy="250" r="100" fill="#FF0000" />
+      <circle cx="250" cy="250" r="90" fill="#FF6600" />
+      <circle cx="250" cy="250" r="80" fill="#FFFF00" />
+      <circle cx="250" cy="250" r="70" fill="#00FF00" />
+      <circle cx="250" cy="250" r="60" fill="#0000FF" />
+      <circle cx="250" cy="250" r="50" fill="#6600FF" />
+      <circle cx="250" cy="250" r="40" fill="#9900FF" /> -->
+
+    <!-- </svg> -->
+
+    <!-- Monkey Face -->
+    <svg width="1000" height="1000">
+      <!-- Right Ear -->
+      <circle cx="475" cy="300" r="110" fill="#FFCC99"  />
+      <!-- Left Ear -->
+      <circle cx="125" cy="300" r="110" fill="#FFCC99"  />
+      <!-- Main Face -->
+      <circle cx="300" cy="300" r="200" fill="#663300" />
+      <!-- Left White Eye -->
+      <circle cx="200" cy="300" r="75" fill="#FFFFFF" stroke="black" />
+      <!-- Right White Eye -->
+      <circle cx="400" cy="300" r="75" fill="#FFFFFF" stroke="black" />
+      <!-- Left pupil -->
+      <circle id="left-pupil" cx="200" cy="300" r="25" fill="#000000" stroke="black" />
+      <!-- Right Pupil -->
+      <circle id="right-pupil" cx="400" cy="300" r="25" fill="#000000" stroke="black" />
+      <!-- Mouth Ellipse -->
+      <ellipse cx="300" cy="460" rx="200" ry="110" fill="#FFCC99"/>
+      <!-- Mouth Rectangle -->
+      <rect x="200" y="460" width="200" height="10" fill="#000000" />
+    </svg>
+
+    <!-- <svg width="500" height="500" viewbox="-1 -1 2 2">
+    </svg> -->
+  </body>
+</html>

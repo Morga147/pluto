@@ -34,3 +34,19 @@ div.column {
   padding-right: 1%;
   float: left;
 }
+
+@media only screen and (max-width: 767px){
+  div.column{
+    float: none;
+    width: 100%;
+  }
+  img{
+    display: none;
+  }
+}
+
+@media print {
+  div.column {
+    width: 49%;
+  }
+}

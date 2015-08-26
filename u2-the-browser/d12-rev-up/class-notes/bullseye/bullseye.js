@@ -14,5 +14,20 @@ $(function() {
     alert('You hit <body>');
   });
 
-  // Fire your code away
+ $("#d3").click(function(event){
+   event.stopPropagation();
+   alert("You hit a bullseye!");
+ });
+
+ $("#d2").click(function(even){
+   event.stopPropagation();
+   alert("You hit " + $(event.currentTarget).attr("id"));
+ });
+
+ $("#d1").click(function(even){
+   event.stopPropagation();
+   alert("You hit " + $(event.currentTarget).attr("id"));
+ });
+
+
 });
