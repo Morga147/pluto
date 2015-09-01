@@ -1,4 +1,5 @@
 $(function() {
+<<<<<<< HEAD
 
   $("#level3").click(function(event){
     event.stopPropagation();
@@ -37,3 +38,22 @@ $(function() {
   //   $(element).css('background-color', '');
   // }
 })();
+=======
+  $('#level3').click(function(event) {
+    alert('Clicked on ' + $(event.currentTarget).attr('id'));
+  });
+
+  $('#level2').click(function(event) {
+    event.stopPropagation();
+    alert('Clicked on ' + $(event.currentTarget).attr('id'));
+  });
+
+  $('#level1').click(function(event) {
+    alert('Clicked on ' + $(event.currentTarget).attr('id'));
+  });
+
+  $('body').click(function(event){
+    alert('Clicked on <body>');
+  });
+});
+>>>>>>> 989fd70e0a86a616a7b444a99e86ce917fcf5cc8
