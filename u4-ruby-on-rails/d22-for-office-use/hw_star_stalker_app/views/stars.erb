@@ -1,0 +1,9 @@
+<ul>
+  <% @results.each do |person| %>
+    <li><a href="/stars/<%=person['id']%>"> <%= person['name'] %> </a></li>
+    <ul>
+      <li><%= person['born_on']%></li>
+      <li><img style="max-width: 10em" src="<%= person['image_url']%>" /></li>
+    </ul>
+  <%end%>
+</ul>
