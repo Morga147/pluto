@@ -52,6 +52,10 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+<<<<<<< HEAD
+=======
+    ffaker (2.1.0)
+>>>>>>> 56cf2f5bb562c006994b5768923b86f3e11c2362
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -79,6 +83,11 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+<<<<<<< HEAD
+=======
+    pry-rails (0.3.4)
+      pry (>= 0.9.10)
+>>>>>>> 56cf2f5bb562c006994b5768923b86f3e11c2362
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -148,10 +157,18 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+<<<<<<< HEAD
   jbuilder (~> 2.0)
   jquery-rails
   pg
   pry
+=======
+  ffaker
+  jbuilder (~> 2.0)
+  jquery-rails
+  pg
+  pry-rails
+>>>>>>> 56cf2f5bb562c006994b5768923b86f3e11c2362
   rails (= 4.2.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150910154502) do
+=======
+ActiveRecord::Schema.define(version: 20150910145618) do
+>>>>>>> 56cf2f5bb562c006994b5768923b86f3e11c2362
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,22 +23,34 @@ ActiveRecord::Schema.define(version: 20150910154502) do
   create_table "bloggers", force: :cascade do |t|
     t.string   "name"
     t.string   "login"
+<<<<<<< HEAD
     t.string   "password"
     t.text     "slogan"
+=======
+    t.string   "slogan"
+    t.string   "password"
+>>>>>>> 56cf2f5bb562c006994b5768923b86f3e11c2362
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "blogs", force: :cascade do |t|
+<<<<<<< HEAD
     t.string   "title"
     t.text     "content"
     t.integer  "blogger_id"
+=======
+    t.integer  "blogger_id"
+    t.string   "title"
+    t.text     "content"
+>>>>>>> 56cf2f5bb562c006994b5768923b86f3e11c2362
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   add_index "blogs", ["blogger_id"], name: "index_blogs_on_blogger_id", using: :btree
 
+<<<<<<< HEAD
   create_table "comments", force: :cascade do |t|
     t.text     "content"
     t.integer  "blogger_id"
@@ -49,4 +65,7 @@ ActiveRecord::Schema.define(version: 20150910154502) do
   add_foreign_key "blogs", "bloggers"
   add_foreign_key "comments", "bloggers"
   add_foreign_key "comments", "blogs"
+=======
+  add_foreign_key "blogs", "bloggers"
+>>>>>>> 56cf2f5bb562c006994b5768923b86f3e11c2362
 end
