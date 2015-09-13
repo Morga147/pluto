@@ -39,7 +39,10 @@ class Blogger
   end
 
   def blogs
-    []
+    result = $db.exec_params("SELECT * FROM blogs WHERE blogger_id=$1", [id]).to_a
+    result.map do |columns|
+      Blog.new(columns)
+    end
   end
 
 end

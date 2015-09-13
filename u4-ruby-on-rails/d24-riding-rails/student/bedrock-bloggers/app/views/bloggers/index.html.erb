@@ -1,0 +1,11 @@
+<h1>Listing of Bloggers</h1>
+<ul>
+  <% @bloggers.each do |person|%>
+    <li>
+      <!-- <a href="/bloggers/<%=person.id%>"><%= person.name%></a> -->
+      <!-- Below is the magic method that equals the above linking -->
+      <!-- person.name and person are parameters -->
+      <%= link_to person.name, person %>
+    </li>
+  <%end%>
+</ul>
