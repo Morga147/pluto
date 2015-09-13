@@ -1,0 +1,24 @@
+// Place all the styles related to the style_guide controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
+
+.body {
+font-family: 'Roboto Slab', serif;
+width: 70%;
+margin: 0 auto;
+}
+h1 {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+.buttons {
+  width: 75%;
+  margin: 0 auto;
+}
+.content {
+  text-indent: 2em;
+}
