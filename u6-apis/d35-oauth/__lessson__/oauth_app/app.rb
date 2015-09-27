@@ -17,7 +17,7 @@ module App
       base_url = "https://github.com/login/oauth/authorize"
       redirect_uri = "http://localhost:9292/oauth_callback"
       state = SecureRandom.urlsafe_base64 # this should be a secure random string
-      session[:auth_state] = state
+      session[:auth_state] = state #saving this for checking later
       # scope is option we can add later.
       #there's a Ruby class that can encode URIs, consider showing.
       query = "client_id=#{CLIENT_ID}&redirect_uri=#{redirect_uri}&state=#{state}"
@@ -57,11 +57,11 @@ module App
     end
 
     get('/logged_in') do
+      # auth established, let's get stuff from github
       # set the headers
       headers = {
         :Accept => "application/vnd.github.v3+json",
         :Authorization => "token #{session[:access_token]}",
-        :'User-Agent'  => "WDI Melville App"
       }
       url = "https://api.github.com/user"
       github_response = RestClient.get(url, headers)
