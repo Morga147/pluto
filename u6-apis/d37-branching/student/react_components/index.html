@@ -9,7 +9,48 @@
   <body>
     <div id="example"></div>
     <script type="text/babel">
-      
+      var CommentBox = React.createClass({
+        render: function() {
+          return(
+            <div className="comment-box">
+              Hello, world! I am a comment box!
+            </div>
+          );
+        }
+      });
+
+      var CommentList = React.createClass({
+        render: function(){
+          return(
+            <div className="comment-list">
+              Hello I am a comment list.
+            </div>
+          );
+        }
+      });
+
+      var CommentForm = React.createClass({
+        render: function(){
+          return(
+            <div className="comment-form">
+              <form class="formBaby" action="index.html" method="post">
+                <textarea name="Blah" rows="8" cols="40"></textarea> <br />
+                <input type="submit" name="submit" value="Submit"></input>
+
+              </form>
+            </div>
+          );
+        }
+      });
+
+      React.render(
+        <div>
+          <CommentBox/>
+          <CommentList/>
+          <CommentForm/>
+        </div>,
+        document.getElementById('example')
+      );
     </script>
   </body>
 </html>
