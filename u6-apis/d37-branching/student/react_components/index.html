@@ -8,28 +8,48 @@
   </head>
   <body>
     <div id="example"></div>
+    
     <script type="text/babel">
+<<<<<<< HEAD
       var CommentBox = React.createClass({
         render: function() {
           return(
             <div className="comment-box">
               Hello, world! I am a comment box!
+=======
+
+      var CommentBox = React.createClass({
+        render() {
+          return (
+            <div id="container" className="comment-box">
+              Hello, world! I am a CommentBox
+              <CommentList/>
+              <CommentForm/>
+>>>>>>> b55932891590415321a81871a7813f6dbe2bcdc8
             </div>
           );
         }
       });
 
       var CommentList = React.createClass({
+<<<<<<< HEAD
         render: function(){
           return(
             <div className="comment-list">
               Hello I am a comment list.
+=======
+        render() {
+          return (
+            <div className="comment-list">
+              Hello I am a CommentList
+>>>>>>> b55932891590415321a81871a7813f6dbe2bcdc8
             </div>
           );
         }
       });
 
       var CommentForm = React.createClass({
+<<<<<<< HEAD
         render: function(){
           return(
             <div className="comment-form">
@@ -38,12 +58,19 @@
                 <input type="submit" name="submit" value="Submit"></input>
 
               </form>
+=======
+        render() {
+          return (
+            <div className="comment-form">
+              Hello World I am a CommentForm
+>>>>>>> b55932891590415321a81871a7813f6dbe2bcdc8
             </div>
           );
         }
       });
 
       React.render(
+<<<<<<< HEAD
         <div>
           <CommentBox/>
           <CommentList/>
@@ -51,6 +78,12 @@
         </div>,
         document.getElementById('example')
       );
+=======
+        <CommentBox/>,
+        document.getElementById('example')
+      );
+      
+>>>>>>> b55932891590415321a81871a7813f6dbe2bcdc8
     </script>
   </body>
 </html>
