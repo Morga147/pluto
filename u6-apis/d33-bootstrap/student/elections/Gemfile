@@ -23,8 +23,13 @@ gem 'faker'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+<<<<<<< HEAD
 
 gem 'jquery-turbolinks', '~> 0.2.1'
+=======
+gem 'jquery-turbolinks'
+
+>>>>>>> 2898c00c72f0e53e94b3cc50e85788dc8db5a0bb
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.

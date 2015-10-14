@@ -1,0 +1,52 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ */
+ @import 'palette';
+ @import 'fonts';
+
+body {
+  background-image: image-url('background.jpg');
+  background-color: $color5;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+  font-family: $font1;
+  font-size: 3em;
+  color: $color1;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-shadow: 3px 3px 4px invert($color1);
+}
+h2 {
+  font-family: $font1;
+  font-size: 2em;
+  color: $color1;
+  border-bottom: 2px solid $color1;
+  text-align: center;
+  padding-bottom: 4px;
+  margin-top: 0;
+  padding-top: 0;
+}
+p {
+  font-family: $font2;
+  color: $color1;
+  font-size: 1.5em;
+  text-indent: 40px;
+  text-shadow: 2px 2px 2px invert($color1), -2px -2px 2px invert($color1);
+}
+.homepage {
+  margin: 0 10%;
+}
