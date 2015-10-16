@@ -6,7 +6,7 @@
 - db.vampires.insert([ <paste seed file contents>])
 
 ### PART 2
-<!-- Added {name: 1} to each query to just return the vampires' names and not their whole data object -->
+ ***Added {name: 1} to each query to just return the vampires' names and not their whole data object*** 
 - db.vampires.find({victims:{$gt:500}}, {name: 1})
 - db.vampires.find({victims:{$lte:150}}, {name: 1})
 - db.vampires.find({victims:{$ne:210234}}, {name: 1})
